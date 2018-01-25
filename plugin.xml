@@ -13,6 +13,14 @@
     <platform name="android">
         <framework src="com.google.ads.mediation:chartboost:7.0.1.0" />
 
+        <config-file parent="/manifest/application" target="AndroidManifest.xml">
+            <activity android:name="com.chartboost.sdk.CBImpressionActivity"
+                android:excludeFromRecents="true"
+                android:hardwareAccelerated="true"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+                android:configChanges="keyboardHidden|orientation|screenSize" />
+        </config-file>
+
         <!-- Prevents compilation error: https://developer.android.com/studio/build/multidex.html -->
         <!-- when add additional mediation plugins -->
         <dependency id="cordova-plugin-multidex" />
