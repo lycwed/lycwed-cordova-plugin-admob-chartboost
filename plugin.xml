@@ -25,7 +25,7 @@
 
         <!-- Prevents compilation error: https://developer.android.com/studio/build/multidex.html -->
         <!-- when add additional mediation plugins -->
-        <dependency id="cordova-plugin-multidex" />
+        <!-- <dependency id="cordova-plugin-multidex" /> -->
     </platform>
 
     <platform name="ios">
